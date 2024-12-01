@@ -13,7 +13,9 @@
 
     /* FONT TEXT */
     --body-font: "Inter", serif;
-    --maior-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
     
     /* FONT WEIGHT */
     --font-medium: 500;
@@ -68,19 +70,31 @@ svg {
     height: auto;
 }
 
-/* REALSAR CSS da CLASSE */
+/* REUSABLE CSS CLASSES */
 .container {
     max-width: 1120px;
     margin-inline: 1.5rem;
 }
 
 .section {
-    padding-block: 5rem 2rem;
+    padding: 0;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; 
+    justify-content: center; 
 }
 
+.section {
+    padding-top: var(--header-height);
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+    font-size: var(--h2-font-size);
+}
 
 
 /* HEADER e NAV */
@@ -124,6 +138,16 @@ svg {
     color: var(--first-color);
 }
 
+.section__title span,
+.section__subtitle span {
+    color: var(--first-color);
+}
+
+.home__content,
+.about__data {
+    width: 25rem;
+}
+
 .active-link {
     color: var(--first-color);
 }
@@ -135,14 +159,11 @@ svg {
 }
 
 .home__container {
-    padding-top: 2rem;
+    padding-top: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
-
-.home__content {
-    width: 25rem;
+    align-items: center;
 }
 
 .home__pre__content {
@@ -154,8 +175,8 @@ svg {
     font-weight: var(--font-semi-bold);
 }
 
-.home__title span {
-    color: var(--first-color);
+.home__subtitle {
+    margin-top: 1rem;
 }
 
 .home__description {
@@ -214,6 +235,33 @@ svg {
     opacity: .8;
 }
 
+/* ABOUT */
+.about__container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
 
+.about__title {
+    padding: 1rem 0;
+}
 
+.about__image {
+    justify-self: center;
+}
+
+.about__blob {
+    width: 320px;
+}
+
+.about__blob path {
+    stroke: var(--first-color);
+}
+
+.about__img {
+    width: 900px;
+    transform: translateX(-120px);
+}
 
