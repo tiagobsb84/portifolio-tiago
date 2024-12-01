@@ -9,12 +9,15 @@
     --title-color: hsl(228, 8%, 95%);
     --container-color: hsl(228, 15%, 15%);
     --first-color: #08e3d5;
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
 
     /* FONT TEXT */
     --body-font: "Inter", serif;
+    --maior-font-size: 1.25rem;
     
     /* FONT WEIGHT */
     --font-medium: 500;
+    --font-semi-bold: 600;
 
     /* Z-INDEX */
     --z-fixed: 100;
@@ -71,6 +74,15 @@ svg {
     margin-inline: 1.5rem;
 }
 
+.section {
+    padding-block: 5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
 /* HEADER e NAV */
 .header {
     position: fixed;
@@ -115,6 +127,93 @@ svg {
 .active-link {
     color: var(--first-color);
 }
+
+/* HOME */
+.home {
+    background-color: var(--container-color);
+    height: 100vh;
+}
+
+.home__container {
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home__content {
+    width: 25rem;
+}
+
+.home__pre__content {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--maior-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.home__title span {
+    color: var(--first-color);
+}
+
+.home__description {
+    margin-block: 1rem 1.5rem;
+}
+
+.home__redes__sociais {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+    padding-top: 1rem;
+}
+
+.home__redes__sociais-link {
+    display: flex;
+    background-color: var(--first-color);
+    padding: .5rem;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: transform .4s;
+}
+
+.home__redes__sociais-link:hover {
+    transform: translateY(-.25rem);
+}
+
+.home__image {
+    justify-self: center;
+}
+
+.home__blob {
+    width: 320px;
+    fill: var(--first-color);
+    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2))
+}
+
+.home__img {
+    width: 900px;
+    transform: translateX(-150px);
+}
+
+/* BOTTON */
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    color: var(--body-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
 
 
 
