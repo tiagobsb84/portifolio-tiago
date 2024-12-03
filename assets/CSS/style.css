@@ -206,7 +206,7 @@ p {
 .home__blob {
     width: 320px;
     fill: var(--first-color);
-    filter: drop-shadow(0 12px 12px hsla(var(--hue), 100%, 40%, .2))
+    box-shadow: (50 50px 50px var(--first-color), 10%, 40%, .5);
 }
 
 .home__img {
