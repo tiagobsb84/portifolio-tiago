@@ -4,12 +4,11 @@
     --header-height: 3.5rem;
 
     /* COLOR */
-    --body-color: hsl(228, 15%, 20%);
-    --text-color: hsl(228, 8%, 65%);
-    --title-color: hsl(228, 8%, 95%);
-    --container-color: hsl(228, 15%, 15%);
+    --body-color: #191b24;
+    --text-color: #9598A3;
+    --title-color: #f1f2f3;
+    --container-color: #343846;
     --first-color: #08e3d5;
-    --first-color-alt: hsl(var(--hue), 56%, 35%);
 
     /* FONT TEXT */
     --body-font: "Inter", serif;
@@ -61,11 +60,6 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3 {
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-}
-
 img,
 svg {
     width: 100%;
@@ -75,29 +69,41 @@ svg {
 /* REUSABLE CSS CLASSES */
 .container {
     max-width: 1120px;
-    margin-inline: 1.5rem;
+    margin-inline: 1rem;
 }
 
 .section {
-    padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center; 
     justify-content: center; 
-}
-
-.section {
     padding-top: var(--header-height);
 }
 
 .section__title {
     font-size: var(--big-font-size);
+    color: var(--title-color);
 }
 
 .section__subtitle {
     font-size: var(--medio-font-size);
+    color: var(--title-color);
 }
 
+p {
+    font-size: var(--small-font-size);
+}
+
+.section__title span,
+.section__subtitle span {
+    color: var(--first-color);
+}
+
+.home__content,
+.about__data,
+.skills__data {
+    width: 25rem;
+}
 
 /* HEADER e NAV */
 .header {
@@ -118,7 +124,8 @@ svg {
 
 .nav__logo {
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--medio-font-size);
 }
 
 .nav__logo span {
@@ -138,29 +145,6 @@ svg {
 
 .nav__link:hover {
     color: var(--first-color);
-}
-
-.section__title {
-    font-size: var(--big-font-size);
-}
-
-.section__subtitle {
-    font-size: var(--medio-font-size);
-}
-
-.section__description {
-    font-size: var(--small-font-size);
-}
-
-.section__title span,
-.section__subtitle span {
-    color: var(--first-color);
-}
-
-.home__content,
-.about__data,
-.skills__data {
-    width: 25rem;
 }
 
 .active-link {
@@ -325,11 +309,24 @@ svg {
     padding: 3rem;
 }
 
-.projects__container {
+/* CAROUSEL */
+.project__carousel {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project__carousel__container {
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
-    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.projects__container {
+    display: flex;
+    gap: 1rem;
 }
 
 .project__card {
@@ -340,6 +337,15 @@ svg {
     overflow: hidden;
 }
 
+.carousel__button {
+    cursor: pointer;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
 .project__modal {
     padding: .8rem;
     text-align: center;
@@ -347,6 +353,15 @@ svg {
     flex-direction: column;
     gap: 1.4rem;
 }
+
+.carousel__button--prev {
+    left: 1rem;
+}
+
+.carousel__button--next {
+    right: 1rem;
+}
+
 
 .button__modal {
     text-decoration: none;
@@ -358,13 +373,12 @@ svg {
 }
 
 .project__button {
-    bottom: 0;
     display: flex;
     justify-content: space-around;
 }
 
 /* ANIMATION BUTTON MODAL */
-.button__modal::before {
+/*.button__modal::before {
     content: '';
     transition: .5s ease-in-out;
     border-radius: .3rem;
@@ -404,11 +418,4 @@ svg {
     border-left: 2px solid var(--first-color);
 }
 
-.project__button__mostra {
-    text-align: center;
-    padding: 3rem
-}
-
-.project__button__cards {
-    width: 11rem;
-}
+/* FOOTER */
