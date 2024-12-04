@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
+
     <!-- REMIXICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <title>Tiago Silva</title>
     <!-- CSS da página -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
 
-    <title>Tiago Silva</title>
 </head>
 <body>
     <!-- HEADER -->
@@ -249,8 +255,91 @@
             </div>
         </section>
        
+        <!-- PROJECT -->
+        <section class="project section" id="project">
+            <div class="project__content">
+                <h3 class="section__subtitle">Meus <span>Jobs</span></h3>
+                <h2 class="section__title">Projetos Recentes</h2>
+            </div>
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="project__card swiper-slide">
+                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
+                            <div class="card__content">
+                                <h1 class="card__title">Jokenpô</h1>
+                                <p class="card__description">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                <div class="card__buttons">
+                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__card swiper-slide">
+                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
+                            <div class="card__content">
+                                <h1 class="card__title">Jokenpô</h1>
+                                <p class="card__description">2 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                <div class="card__buttons">
+                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__card swiper-slide">
+                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
+                            <div class="card__content">
+                                <h1 class="card__title">Jokenpô</h1>
+                                <p class="card__description">3 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                <div class="card__buttons">
+                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__card swiper-slide">
+                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
+                            <div class="card__content">
+                                <h1 class="card__title">Jokenpô</h1>
+                                <p class="card__description">4 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                <div class="card__buttons">
+                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__card swiper-slide">
+                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
+                            <div class="card__content">
+                                <h1 class="card__title">Jokenpô</h1>
+                                <p class="card__description">5 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                <div class="card__buttons">
+                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> 
+            </div>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h1 class="section__title">Tiago <span>Silva</span></h1>
+        <h2 class="section__subtitle">FullStack</h2>
+    </footer>
     
     <script src="./assets/js/main.js"></script>
+
+    <!-- SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+
+    
 </body>
 </html>
