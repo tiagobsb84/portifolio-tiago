@@ -178,7 +178,7 @@ p {
     padding: 1rem;
 }
 
-.home__redes__sociais {
+.redes__sociais {
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
@@ -399,3 +399,14 @@ p {
 
 
 /* FOOTER */
+.footer {
+    background-color: var(--container-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.footer__subtitle {
+    font-size: var(--small-font-size);
+}
