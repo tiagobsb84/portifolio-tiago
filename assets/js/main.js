@@ -47,3 +47,13 @@ window.addEventListener('scroll', () => {
         })
     }
 })
+
+// Menu Hamburguer
+const menuBtn = document.getElementById('menu-btn');
+const navList = document.getElementById('nav__menu');
+
+// Alternar entre abrir e fechar o menu
+menuBtn.addEventListener('click', function () {
+    const isOpen = navList.classList.toggle('open');
+    menuBtn.textContent = isOpen ? 'X' : '☰' // Alterna o icone.
+})
