@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <title>Tiago Silva</title>
+
     <!-- CSS da página -->
     <link rel="stylesheet" href="./assets/CSS/style.css">
 
@@ -22,43 +23,43 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <nav class="nav container menu">
-            <a href="#home" class="nav__logo">Tiago <span>Silva</span></a>
+        <nav class="nav__header">
+            <div class="logo__header">
+                <a href="#home" class="logo__nav">Tiago <span>Silva</span></a>
+            </div>
             <button id="menu-btn" class="menu-btn">☰</button>
-            <div id="nav__menu" class="nav__menu">
-                <ul class="nav__list list-link">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">Home</a>
+            <div id="menu__nav" class="menu__nav">
+                <ul class="list__nav">
+                    <li class="item__nav">
+                        <a href="#home" class="link__nav active-link">Home</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">Sobre</a>
+                    <li class="item__nav">
+                        <a href="#about" class="link__nav">Sobre</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#skill" class="nav__link">Habilidades</a>
+                    <li class="item__nav">
+                        <a href="#skill" class="link__nav">Habilidades</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#project" class="nav__link">Projetos</a>
+                    <li class="item__nav">
+                        <a href="#project" class="link__nav">Projetos</a>
                     </li>
                 </ul> 
             </div>
-        </nav>
-       
+        </nav> 
     </header>
     <main class="main">
-
         <!-- HOME -->
-        <section class="home section" id="home">
-            <div class="home__container">
-                <div class="home__content container grid">
+        <section class="home" id="home">
+            <div class="container__home">
+                <div class="content__home">
                     <div class="home__pre__content">
-                        <h1 class="section__title">Olá, eu sou <span>Tiago Silva</span></h1>
-                        <h2 class="section__subtitle home__subtitle">Desenvolvedor FullStack</h2>
-                        <p class="section__description">
+                        <h1 class="title__home">Olá, eu sou <span>Tiago Silva</span></h1>
+                        <h2 class="subtitle__home">Desenvolvedor FullStack</h2>
+                        <p class="description__home">
                             Com conhecimento em Java ofereço serviços Backend, é ReactJS no Frontend.
                         </p>
-                        <button class="home__button__curriculo button">Currículo</button>
+                        <button class="button__home">Currículo</button>
                     </div>
-                    <div class="redes__sociais">
+                    <div class="redes__sociais sociais-home">
                         <a 
                             href="https://github.com/tiagobsb84"
                             target="_blank"
@@ -75,12 +76,10 @@
                         </a>
                     </div>
                 </div>
-                
-                <!-- IMAGE DA FOTO HOME -->
                 <div class="home__image">
                     <img 
                         src="./assets/img/imagem home.jpg" 
-                        alt="foto de perfil"
+                        alt="imagem da pessoa no computador"
                         width="400"
                         class="image-home"
                     >
@@ -89,22 +88,20 @@
         </section>
 
         <!-- ABOUT -->
-        <section class="about section" id="about">
-            <div class="about__container">
-                <div class="about__data about__sobre">
-                    <h3 class="section__subtitle">Minha <span>Bio</span></h3>
-                    <h2 class="section__title about__title">Sobre mim</h2>
-                    <p class="about__description">
+        <section class="about" id="about">
+            <div class="container__about">
+                <div class="content__about">
+                    <h3 class="subtitle__about">Minha <span>Bio</span></h3>
+                    <h2 class="title__about">Sobre mim</h2>
+                    <p class="description__about">
                         Me chamo Tiago Silva, graduado no curso de Análise e Desenvolvimento de Sistemas pela UNICSUL e desenvolvedor FullStack.
                         Estou sempre em busca de transformar ideias em realidade, combinando habilidades técnicas e criatividade.
                     </p>
                 </div>
-
-                <!-- TRANSFORM IMAGE -->
                 <div class="about__image">
                     <img 
                         src="./assets/img/foto_tiago_arredondada.png" 
-                        alt="foto de perfil"
+                        alt="foto de perfil do Tiago"
                         width="400"
                         class="img-about"
                     >
@@ -113,18 +110,18 @@
         </section>
 
         <!-- SKILL -->
-        <section class="skills section" id="skill"> 
-            <div class="skills__container">
-                <div class="skills__data">
-                    <h3 class="section__subtitle">Principais <span>Skills</span></h3>
-                    <h2 class="section__title">Minhas habilidades</h2>
-                    <p class="section__description">
+        <section class="skills" id="skill"> 
+            <div class="container__skill">
+                <div class="content__skills">
+                    <h3 class="subtitle__skills">Principais <span>Skills</span></h3>
+                    <h2 class="title__skills">Minhas habilidades</h2>
+                    <p class="description__skills">
                         Veja algumas das minhas principais competências técnicas que possuo e atuo, para desenvolver os projetos.
                     </p>
-                    <a href="#project" class="button">Veja meus projetos</a>
+                    <a href="#project" class="button__skills">Veja meus projetos</a>
                 </div>
-                <div class="skills__content">
-                    <ol class="skills__group">
+                <div class="formation__skills">
+                    <ol class="list__skills">
                         <li class="skills__item"><i class="fab fa-java"></i> Java</li>
                         <li class="skills__item"><i class="ri-settings-3-line"></i> Spring Boot</li>
                         <li class="skills__item"><i class="ri-javascript-fill"></i> JavaScript</li>
@@ -132,7 +129,7 @@
                             <i class="ri-html5-line"></i> HTML & <i class="ri-css3-fill"></i> CSS
                         </li>
                     </ol>
-                    <ol class="skills__group" start="5">
+                    <ol class="list__skills" start="5">
                         <li class="skills__item"><i class="ri-github-fill"></i> Git & Github</li>
                         <li class="skills__item"><i class="fas fa-paint-brush"></i> Styled-Components</li>
                         <li class="skills__item"><i class="ri-reactjs-fill"></i> ReactJs</li>
@@ -143,75 +140,75 @@
         </section>
        
         <!-- PROJECT -->
-        <section class="project section" id="project">
-            <div class="project__content">
-                <h3 class="section__subtitle">Meus <span>Jobs</span></h3>
-                <h2 class="section__title">Projetos Recentes</h2>
-            </div>
-            <div class="container swiper">
-                <div class="card-wrapper">
-                    <ul class="card-list swiper-wrapper">
-                        <li class="project__card swiper-slide">
-                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
-                            <div class="card__content">
-                                <h1 class="card__title">Jokenpô</h1>
-                                <p class="card__description">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
-                                <div class="card__buttons">
-                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
-                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+        <section class="project" id="project">
+            <div class="container__project">
+                <div class="content__project">
+                    <h3 class="subtitle__project">Meus <span>Jobs</span></h3>
+                    <h2 class="title__project">Projetos Recentes</h2>
+                </div>
+                <div class="container__card swiper">
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+                            <li class="card__project swiper-slide">
+                                <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="img__project">
+                                <div class="content__card">
+                                    <h1 class="title__card">Jokenpô</h1>
+                                    <p class="description__card">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                    <div class="button__project">
+                                        <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                        <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="project__card swiper-slide">
-                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
-                            <div class="card__content">
-                                <h1 class="card__title">Jokenpô</h1>
-                                <p class="card__description">2 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
-                                <div class="card__buttons">
-                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
-                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                            </li>
+                            <li class="card__project swiper-slide">
+                                <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="img__project">
+                                <div class="content__card">
+                                    <h1 class="title__card">Jokenpô</h1>
+                                    <p class="description__card">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                    <div class="button__project">
+                                        <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                        <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="project__card swiper-slide">
-                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
-                            <div class="card__content">
-                                <h1 class="card__title">Jokenpô</h1>
-                                <p class="card__description">3 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
-                                <div class="card__buttons">
-                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
-                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                            </li>
+                            <li class="card__project swiper-slide">
+                                <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="img__project">
+                                <div class="content__card">
+                                    <h1 class="title__card">Jokenpô</h1>
+                                    <p class="description__card">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                    <div class="button__project">
+                                        <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                        <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="project__card swiper-slide">
-                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
-                            <div class="card__content">
-                                <h1 class="card__title">Jokenpô</h1>
-                                <p class="card__description">4 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
-                                <div class="card__buttons">
-                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
-                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                            </li>
+                            <li class="card__project swiper-slide">
+                                <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="img__project">
+                                <div class="content__card">
+                                    <h1 class="title__card">Jokenpô</h1>
+                                    <p class="description__card">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                    <div class="button__project">
+                                        <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                        <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="project__card swiper-slide">
-                            <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="project__img">
-                            <div class="card__content">
-                                <h1 class="card__title">Jokenpô</h1>
-                                <p class="card__description">5 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
-                                <div class="card__buttons">
-                                    <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
-                                    <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                            </li>
+                            <li class="card__project swiper-slide">
+                                <img src="./assets/img/imagem-jokenpo.jpg" alt="Jogo Jokenpô" class="img__project">
+                                <div class="content__card">
+                                    <h1 class="title__card">Jokenpô</h1>
+                                    <p class="description__card">1 Jogo de pedra, papel e tesoura. Criado com HTML, CSS e JS.</p>
+                                    <div class="button__project">
+                                        <a class="button__card" target="_blank" href="https://jokennpo.netlify.app/">Visualizar</a>
+                                        <a class="button__card" target="_blank" href="https://github.com/tiagobsb84/Jokenpo">Repositório</a>    
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="overlay" id="menu-overlay"></div>
-                </div>      
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>      
+                </div>
             </div>
         </section>
     </main>
@@ -219,11 +216,11 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__content">
-            <div class="footer__container container">
-                <h1 class="section__title">Tiago <span>Silva</span></h1>
-                <h2 class="section__subtitle footer__subtitle">Full Stack Developer</h2>
+            <div class="footer__container">
+                <h1 class="title__footer">Tiago <span>Silva</span></h1>
+                <h2 class="subtitle__footer">Full Stack Developer</h2>
             </div>
-            <div class="redes__sociais">
+            <div class="redes__sociais sociais-footer">
                 <a 
                     href="https://github.com/tiagobsb84"
                     target="_blank"

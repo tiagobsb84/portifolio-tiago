@@ -330,7 +330,7 @@ p {
 }
 
 .card__title {
-    color: var(--first-color);
+    color: aqua;
     font-size: var(--medio-font-size);
     margin: .5rem 0
 }
@@ -345,7 +345,7 @@ p {
     text-decoration: none;
     border-radius: .3rem;
     margin: 1rem;
-    color: var(--first-color);
+    color: aqua;
     cursor: pointer;
     position: relative;
     padding: .5rem;
