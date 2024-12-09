@@ -1,5 +1,5 @@
 /* BUTTON ACTIVE NAV */
-const itemNavigation = document.querySelectorAll('.nav__list li a');
+const itemNavigation = document.querySelectorAll('.nav__header li a');
 const sections = document.querySelectorAll('section');
 
 
@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
 
 // Menu Hamburguer
 const menuBtn = document.getElementById('menu-btn');
-const navList = document.getElementById('nav__menu');
+const navList = document.getElementById('menu__nav');
 
 // Alternar entre abrir e fechar o menu
 menuBtn.addEventListener('click', function () {

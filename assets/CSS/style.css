@@ -491,11 +491,11 @@ body {
         top: 0;
         right: -300px; /* Fora da tela inicialmente */
         width: 300px;
+        height: 100%;
         background-color: var(--body-color);
         color: var(--title-color);
         transition: right 0.3s ease;
         padding-top: 50px;
-        height: 50%;
     }
 
     .menu__nav ul {
